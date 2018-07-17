@@ -15,18 +15,22 @@
 
 # eslint-config-ostai
 
-<!-- description -->
+Custom eslint config
 
 ## Install
 
 ```sh
-$ npm install eslint-config-ostai
+$ npm i -D eslint-config-ostai
 ```
 
 ## Usage
 
+.eslintrc.js
+
 ```js
-import eslint_config_ostai from 'eslint-config-ostai'
+module.exports = {
+  extends: 'ostai'
+}
 ```
 
 ## License

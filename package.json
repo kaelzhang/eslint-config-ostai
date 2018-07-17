@@ -1,22 +1,20 @@
 {
   "name": "eslint-config-ostai",
   "version": "1.0.0",
-  "description": "eslint-config-ostai",
-  "main": "src/index.js",
+  "description": "Custom eslint configuration of ostai",
   "scripts": {
     "test": "npm run test-no-report",
     "test-no-report": "nyc ava --timeout=10s",
     "posttest": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
-  "files": [
-    "src/"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/kaelzhang/eslint-config-ostai.git"
   },
   "keywords": [
-    "eslint-config-ostai"
+    "eslint-config-ostai",
+    "eslint",
+    "eslint-config"
   ],
   "engines": {
     "node": ">= 6"
@@ -33,5 +31,8 @@
     "ava": ">= 1.0.0-beta.6",
     "codecov": "^3.0.2",
     "nyc": "^12.0.2"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^13.0.0"
   }
 }
