@@ -1,7 +1,7 @@
 // http://eslint.org/docs/user-guide/configuring
 
 module.exports = {
-  extends: require('eslint-config-airbnb-base'),
+  extends: require.resolve('eslint-config-airbnb-base'),
   rules: {
     semi: ['error', 'never'],
 
