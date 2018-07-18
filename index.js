@@ -74,6 +74,9 @@ module.exports = {
     }],
 
     // allow this: const a = module.exports = method
-    'no-multi-assign': 'off'
+    'no-multi-assign': 'off',
+
+    // allow nested ternary
+    'no-nested-ternary': 'off'
   }
 }
