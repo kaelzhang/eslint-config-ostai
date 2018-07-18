@@ -2,6 +2,10 @@
 
 module.exports = {
   extends: require.resolve('eslint-config-airbnb-base'),
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
   rules: {
     semi: ['error', 'never'],
 
