@@ -51,9 +51,7 @@ module.exports = {
 
     'no-underscore-dangle': ['error', {
       allowAfterThis: true,
-      enforceInMethodNames: false,
-      // node-ignore only
-      allow: ['_rules', '_filter']
+      enforceInMethodNames: false
     }],
 
     'no-return-assign': 'off',
@@ -62,6 +60,16 @@ module.exports = {
 
     'no-confusing-arrow': 'off',
 
-    'no-mixed-operators': 'off'
+    'no-mixed-operators': 'off',
+
+    'spaced-comment': ['error', 'always', {
+      line: {
+        // allow this: ///////////////////////////
+        exceptions: ['/']
+      }
+    }],
+
+    // allow this: const a = module.exports = method
+    'no-multi-assign': 'off'
   }
 }
