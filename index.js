@@ -1,5 +1,7 @@
 // http://eslint.org/docs/user-guide/configuring
 
+const off = 'off'
+
 module.exports = {
   extends: require.resolve('eslint-config-airbnb-base'),
   parserOptions: {
@@ -9,9 +11,9 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
 
-    camelcase: ['off', 'never'],
+    camelcase: off,
 
-    'comma-dangle': ['off'],
+    'comma-dangle': off,
 
     'object-curly-spacing': ['error', 'never'],
 
@@ -36,7 +38,7 @@ module.exports = {
     'func-names': ['error', 'as-needed'],
 
     // allow ++
-    'no-plusplus': 'off',
+    'no-plusplus': off,
 
     'space-unary-ops': ['error', {
       words: true,
@@ -51,20 +53,20 @@ module.exports = {
       }
     }],
 
-    'no-param-reassign': 'off',
+    'no-param-reassign': off,
 
     'no-underscore-dangle': ['error', {
       allowAfterThis: true,
       enforceInMethodNames: false
     }],
 
-    'no-return-assign': 'off',
+    'no-return-assign': off,
 
-    'no-bitwise': 'off',
+    'no-bitwise': off,
 
-    'no-confusing-arrow': 'off',
+    'no-confusing-arrow': off,
 
-    'no-mixed-operators': 'off',
+    'no-mixed-operators': off,
 
     'spaced-comment': ['error', 'always', {
       line: {
@@ -74,9 +76,20 @@ module.exports = {
     }],
 
     // allow this: const a = module.exports = method
-    'no-multi-assign': 'off',
+    'no-multi-assign': off,
 
     // allow nested ternary
-    'no-nested-ternary': 'off'
+    'no-nested-ternary': off,
+
+    // allow arrow function without return
+    'consistent-return': off,
+
+    quotes: ['error', 'single', {
+      avoidEscape: true,
+      allowTemplateLiterals: true
+    }],
+
+    'implicit-arrow-linebreak': off,
+    'function-paren-newline': off
   }
 }
