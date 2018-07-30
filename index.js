@@ -90,6 +90,9 @@ module.exports = {
     }],
 
     'implicit-arrow-linebreak': off,
-    'function-paren-newline': off
+    'function-paren-newline': off,
+    'no-unused-expressions': ['error', {
+      allowShortCircuit: true
+    }]
   }
 }
