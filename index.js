@@ -11,6 +11,7 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
 
+    // allow snake cases
     camelcase: off,
 
     'comma-dangle': off,
@@ -62,6 +63,7 @@ module.exports = {
 
     'no-return-assign': off,
 
+    // allow: a ^ b
     'no-bitwise': off,
 
     'no-confusing-arrow': off,
@@ -84,6 +86,7 @@ module.exports = {
     // allow arrow function without return
     'consistent-return': off,
 
+    // allow this: `'abc'`
     quotes: ['error', 'single', {
       avoidEscape: true,
       allowTemplateLiterals: true
