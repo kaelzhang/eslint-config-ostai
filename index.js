@@ -98,6 +98,9 @@ module.exports = {
       allowShortCircuit: true,
       allowTernary: true,
       allowTaggedTemplates: true
-    }]
+    }],
+
+    'import/prefer-default-export': 'off',
+    'import/no-default-export': 'off'
   }
 }
