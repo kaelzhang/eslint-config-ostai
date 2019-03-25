@@ -100,7 +100,15 @@ module.exports = {
       allowTaggedTemplates: true
     }],
 
-    'import/prefer-default-export': 'off',
-    'import/no-default-export': 'off'
+    // No prefer for export
+    'import/prefer-default-export': off,
+    'import/no-default-export': off,
+
+    // Allow class methods with no this
+    'class-methods-use-this': off,
+
+    // Allow all kinds of require
+    'global-require': off,
+    'import/no-dynamic-require': off
   }
 }
