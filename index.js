@@ -109,6 +109,8 @@ module.exports = {
 
     // Allow all kinds of require
     'global-require': off,
-    'import/no-dynamic-require': off
+    'import/no-dynamic-require': off,
+
+    'keyword-spacing': 'error'
   }
 }
