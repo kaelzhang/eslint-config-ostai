@@ -111,6 +111,8 @@ module.exports = {
     'global-require': off,
     'import/no-dynamic-require': off,
 
-    'keyword-spacing': 'error'
+    'keyword-spacing': 'error',
+
+    'no-restricted-syntax': off
   }
 }
