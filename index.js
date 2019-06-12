@@ -113,6 +113,9 @@ module.exports = {
 
     'keyword-spacing': 'error',
 
-    'no-restricted-syntax': off
+    'no-restricted-syntax': off,
+
+    // Allow [,,]
+    'no-sparse-arrays': off
   }
 }
