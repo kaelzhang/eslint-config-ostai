@@ -1,6 +1,6 @@
 {
   "name": "@ostai/eslint-config",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Custom eslint configuration of ostai",
   "scripts": {
     "test": "npm run test-no-report",
@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git://github.com/kaelzhang/eslint-config-ostai.git"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "eslint-config-ostai",
     "eslint",
