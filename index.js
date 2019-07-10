@@ -115,7 +115,10 @@ module.exports = {
 
     'no-restricted-syntax': off,
 
-    // Allow [,,]
-    'no-sparse-arrays': off
+    // Allow [,,foo]
+    'no-sparse-arrays': off,
+
+    // allow continue
+    'no-continue': off
   }
 }
