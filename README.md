@@ -20,7 +20,7 @@ Custom eslint config
 ## Install
 
 ```sh
-$ npm i -D eslint-config-ostai
+$ npm i -D @ostai/eslint-config
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ $ npm i -D eslint-config-ostai
 
 ```js
 module.exports = {
-  extends: 'ostai'
+  extends: require.resolve('@ostai/eslint-config')
 }
 ```
 
