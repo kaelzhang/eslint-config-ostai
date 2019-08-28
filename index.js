@@ -119,6 +119,9 @@ module.exports = {
     'no-sparse-arrays': off,
 
     // allow continue
-    'no-continue': off
+    'no-continue': off,
+
+    // Allow multiple classes in a single file
+    'max-classes-per-file': off
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@ostai/eslint-config",
-  "version": "3.4.3",
+  "version": "3.5.0",
   "description": "Custom eslint configuration of ostai",
   "scripts": {
     "test": "npm run test-no-report",
