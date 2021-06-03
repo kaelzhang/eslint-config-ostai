@@ -122,6 +122,9 @@ module.exports = {
     'no-continue': off,
 
     // Allow multiple classes in a single file
-    'max-classes-per-file': off
+    'max-classes-per-file': off,
+
+    // allow _underscore
+    'no-underscore-dangle': off
   }
 }
